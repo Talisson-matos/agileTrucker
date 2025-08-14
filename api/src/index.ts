@@ -9,7 +9,7 @@ const app = express();
 const upload = multer({ dest: 'uploads/' });
 
 // Habilita CORS para permitir requisições do frontend
-app.use(cors({ origin: 'https://agile-trucker-zmrz.vercel.app/' }));
+app.use(cors());
 
 app.post('/upload', upload.single('file'), async (req, res) => {
     if (!req.file) {
