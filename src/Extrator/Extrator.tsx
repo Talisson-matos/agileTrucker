@@ -23,7 +23,7 @@ const ExtratorNF: React.FC = () => {
     formData.append('file', file);
 
     try {
-      const response = await fetch('http://localhost:5000/upload', {
+      const response = await fetch('https://vercel.com/talisson-moreira-matos-projects/agile-trucker-swsm', {
         method: 'POST',
         body: formData,
       });
